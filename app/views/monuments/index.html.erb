@@ -1,6 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Monuments</h1>
+<h2>Visit the <span data-controller="typed" data-typed-strings-value="<%= @monuments.pluck(:name) %>"></span>!</h2>
 <div data-controller="insert-in-list">
   <div id="monuments" data-insert-in-list-target="items">
     <% @monuments.each do |monument| %>
